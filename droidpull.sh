@@ -8,7 +8,7 @@ droidpull() {
     done
 
     BASE="/storage/emulated/0"
-    PORT="${PHONE_PORT:-42069}"
+    PORT="${PHONE_PORT:-8022}"
     SSH_OPTS="-p $PORT -o ConnectTimeout=1 -o BatchMode=yes"
 
     # detect subnet
