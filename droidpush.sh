@@ -8,7 +8,7 @@ droidpush() {
 
     SRC="$1"
     DEST="/storage/emulated/0/Download"
-    PORT=42069
+    PORT=8022
     USER="u0_a235"
 
     # --- get base subnet ---
