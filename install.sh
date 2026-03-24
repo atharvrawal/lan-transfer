@@ -34,7 +34,7 @@ droidpush() {
 
     SRC="$1"
     DEST="/storage/emulated/0/Download"
-    PORT=42069
+    PORT=8022
     USER="u0_a235"
 
     BASE_IP=$(ip route | awk '/default/ {print $3}' | sed 's/\.[0-9]*$//')
@@ -65,7 +65,7 @@ droidpull() {
     done
 
     BASE="/storage/emulated/0"
-    PORT="${PHONE_PORT:-42069}"
+    PORT="${PHONE_PORT:-8022}"
     SSH_OPTS="-p $PORT -o ConnectTimeout=1 -o BatchMode=yes"
 
     GATEWAY=$(ip route | awk '/default/ {print $3}')
